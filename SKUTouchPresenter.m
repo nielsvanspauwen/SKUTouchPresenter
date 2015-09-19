@@ -26,6 +26,7 @@
 #import "SKUTouchPresenter.h"
 #import <QuartzCore/QuartzCore.h>
 #import <objc/runtime.h>
+#import "SKUTouchPresenterViewController.h"
 
 
 #define kWindowLevel    (2 * UIWindowLevelAlert)
@@ -131,6 +132,7 @@ static CGFloat touchRadius = 20;
             overlayWindow.windowLevel = kWindowLevel;
             overlayWindow.userInteractionEnabled = NO;
             overlayWindow.hidden = NO;
+            overlayWindow.rootViewController = [[SKUTouchPresenterViewController alloc] init];
         }
     }
     else {
@@ -159,7 +161,7 @@ static CGFloat touchRadius = 20;
     [CATransaction begin];
     [CATransaction setDisableActions:YES];
     for ( UITouch *touch in touches ) {
-        CGPoint touchPosition = [touch locationInView:nil];
+        CGPoint touchPosition = [touch locationInView:overlayWindow];
         NSNumber *touchKey = [NSNumber numberWithUnsignedInteger:[touch hash]];
         CALayer *layer = [touchLayers objectForKey:touchKey];
         

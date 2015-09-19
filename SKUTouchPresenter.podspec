@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SKUTouchPresenter"
-  s.version      = "1.2.0"
+  s.version      = "1.2.0-nielsvanspauwen"
   s.summary      = "Highlight touches on screen, useful for iOS demos"
   s.description  = <<-DESC
                    SKUTouchPresenter allows you to demo your app to an audience and have
