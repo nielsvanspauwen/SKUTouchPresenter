@@ -14,8 +14,8 @@ Pod::Spec.new do |s|
   s.license      = 'MIT'
   s.author       = { "Scott Guelich" => "scott@guelich.net" }
   s.platform     = :ios
-  s.source       = { :git => "https://github.com/skue/SKUTouchPresenter.git", :tag => "1.2.0" }
-  s.source_files  = 'SKUTouchPresenter.{h,m}, SKUTouchPresenterViewController.{h,m}'
+  s.source       = { :git => "https://github.com/nielsvanspauwen/SKUTouchPresenter.git", :tag => "1.2.0-nielsvanspauwen" }
+  s.source_files  = 'SKUTouchPresenter*.{h,m}'
   s.exclude_files = 'SampleApplication'
   s.framework  = 'QuartzCore'
 end
