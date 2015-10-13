@@ -22,8 +22,7 @@
 
 - (BOOL)prefersStatusBarHidden
 {
-    NSLog(@"SKUTouchPresenterViewController prefersStatusBarHidden");
-    return YES;
+    return NO;
 }
 
 @end
