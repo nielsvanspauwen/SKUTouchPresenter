@@ -14,15 +14,9 @@
 
 @implementation SKUTouchPresenterViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    NSLog(@"SKUTouchPresenterViewController viewDidLoad");
-}
-
 - (BOOL)prefersStatusBarHidden
 {
-    return NO;
+    return YES;
 }
 
 @end
